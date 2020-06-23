@@ -8,5 +8,8 @@ phases:
   build:
     commands:
       - dotnet restore
-        dotnet build
-        dotnet publish
+      - dotnet build
+      - dotnet publish
+artifacts:
+  files:
+    - '**/*'
